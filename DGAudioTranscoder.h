@@ -62,7 +62,7 @@ typedef NS_ENUM(NSInteger, DGAudioTranscoderStatus)
 @property (nonatomic, assign, readonly) UInt32 httpStatusCode;
 @property (nonatomic, assign, readonly) CFStreamStatus streamStatus;
 @property (nonatomic, assign, readonly) CFStreamError streamErrorCode;
-@property (nonatomic, assign, readonly) NSError *streamError;
+@property (nonatomic, strong, readonly) NSError *streamError;
 @property (nonatomic, assign, readonly) SInt64 streamLength;
 @property (nonatomic, assign, readonly) SInt64 streamPosition;
 @property (nonatomic, assign, readonly) float progress;
